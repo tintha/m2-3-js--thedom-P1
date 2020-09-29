@@ -7,6 +7,7 @@
 
 function reverseIt(str) {
   // Your code here
+  return str.split("").reverse().join("");
 }
 
 // Part 2 - Test

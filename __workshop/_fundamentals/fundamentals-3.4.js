@@ -9,6 +9,13 @@
 
 function sum(arr) {
   // Your code here
+  const areTheyAllNumbers = arr.every(element => typeof element === "number");
+  if (areTheyAllNumbers === false) {
+    return undefined;
+  } else {
+    const total = arr.reduce((acc, val) => acc + val);
+    return total;
+  }
 }
 
 // Part 2 - Test

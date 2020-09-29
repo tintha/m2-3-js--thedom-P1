@@ -13,6 +13,18 @@
 
 function repeat(arr) {
   // Your code here
+  let result = [];
+  
+    if (typeof arr[0] != "string" || typeof arr[1] != "number") {
+      return undefined;
+    } else if (arr[1] <= 0) {
+      result.push("");
+    } else {
+      for (let i = 0; i < arr[1]; i++) {
+        result.push(arr[0]);   
+      }
+    }
+  return result.join("");
 }
 
 // Part 2 - Test
